@@ -4,7 +4,7 @@ metadata:
   name: mysql-external
 subsets:
   - addresses:
-      - ip: 10.0.X.Y   # TODO: put MySQL EC2 private IP here
+      - ip: 10.0.X.Y  # <-- replace with MySQL EC2 private IP
     ports:
       - name: mysql
         port: 3306

@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: mysql-external
 spec:
+  clusterIP: None
   ports:
     - name: mysql
       port: 3306

@@ -10,6 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/ssl-redirect: "443"
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:753675398055:certificate/bd30cbae-a768-4dd9-9d9b-d96c470806ea
 spec:
+  ingressClassName: alb
   rules:
     - host: amir-wordpress.cloud-stacks.com
       http:

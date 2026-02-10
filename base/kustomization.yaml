@@ -1,4 +1,5 @@
 resources:
+  - namespace-wordpress.yaml
   - deployment.yaml
   - service.yaml
   - pvc.yaml
