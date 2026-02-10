@@ -1,0 +1,50 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: <REPO_B_URL>          # 🔴 حط GitOps repo URL هنا
+    targetRevision: main
+    path: wordpress/overlays/prod
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: wordpress
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
+
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todo-list-app-argo-application
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/AmirBasiony/todo-list-GitOps-ArgoCD-K8s.git
+    targetRevision: main
+    path: K8s_manifests
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: todo-list-app
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+      
