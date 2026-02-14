@@ -23,7 +23,7 @@ spec:
 
           envFrom:
             - secretRef:
-                name: wp-db-secret
+                name: wp-db-secret  # comes from ExternalSecret
 
           volumeMounts:
             - name: wp-data
