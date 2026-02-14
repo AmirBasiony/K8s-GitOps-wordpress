@@ -13,6 +13,8 @@ spec:
       labels:
         app: wordpress
     spec:
+      securityContext:
+        fsGroup: 33  # www-data's group in most WordPress images
       containers:
         - name: wordpress
           image: 753675398055.dkr.ecr.us-east-1.amazonaws.com/amir-wordpress-app:latest
