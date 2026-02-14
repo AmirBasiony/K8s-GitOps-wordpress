@@ -2,6 +2,5 @@ resources:
   - ../../base
 
 images:
-  - name: wordpress-app
-    newName: 753675398055.dkr.ecr.us-east-1.amazonaws.com/amir-wordpress-app
+  - name: 753675398055.dkr.ecr.us-east-1.amazonaws.com/amir-wordpress-app
     newTag: "r7-14d1480"
