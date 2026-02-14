@@ -25,9 +25,10 @@ spec:
 
           volumeMounts:
             - name: wp-data
-              mountPath: /var/www/html
+              mountPath: /var/www/html/wp-content
       volumes:
         - name: wp-data
           persistentVolumeClaim:
             claimName: wp-pvc
+
 
