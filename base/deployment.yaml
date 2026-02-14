@@ -25,7 +25,7 @@ spec:
 
           volumeMounts:
             - name: wp-data
-              mountPath: /var/www/html/wp-content
+              mountPath: /var/www/html/wp-content/uploads
       volumes:
         - name: wp-data
           persistentVolumeClaim:
