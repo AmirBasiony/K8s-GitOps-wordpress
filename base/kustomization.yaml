@@ -1,8 +1,9 @@
 resources:
+  - secretstore.yaml
+  - external-secret.yaml
   - deployment.yaml
+  - service.yaml
   - ingress.yaml
+  - pvc.yaml
   - mysql-endpoints.yaml
   - mysql-service.yaml
-  - pvc.yaml
-  - secret.yaml
-  - service.yaml
