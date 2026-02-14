@@ -1,5 +1,6 @@
 resources:
-  - cluster-secretstore.yaml
+  - external-secrets-sa.yaml
+  - secretstore.yaml
   - external-secret.yaml
   - deployment.yaml
   - service.yaml
