@@ -1,10 +1,8 @@
 resources:
-  - namespace-wordpress.yaml
   - deployment.yaml
-  - service.yaml
+  - ingress.yaml
+  - mysql-endpoints.yaml
+  - mysql-service.yaml
   - pvc.yaml
   - secret.yaml
-  - mysql-service.yaml
-  - mysql-endpoints.yaml
-  - ingress.yaml
-
+  - service.yaml
