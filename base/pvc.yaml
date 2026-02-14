@@ -3,8 +3,10 @@ kind: PersistentVolumeClaim
 metadata:
   name: wp-pvc
 spec:
+  storageClassName: gp2
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
+
