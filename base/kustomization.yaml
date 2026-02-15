@@ -1,5 +1,5 @@
 resources:
-  - external-secrets-sa.yaml
+  # - external-secrets-sa.yaml
   - secretstore.yaml
   - external-secret.yaml
   - deployment.yaml
